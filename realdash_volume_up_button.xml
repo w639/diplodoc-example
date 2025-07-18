@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RealDashCAN version="2">
+  <frame>
+    <canId>0x1CA</canId>
+    <length>4</length>
+    
+    <!-- Кнопка мультимедиа "Звук громче" -->
+    <value name="Volume Up Button" units="" offset="1" length="1">
+      <conversion g="1" h="0" />
+      <enum val="0x10" text="Нажата" />
+      <enum val="0x00" text="Отпущена" />
+    </value>
+    
+    <!-- Дополнительные байты для полноты фрейма -->
+    <value name="Byte 0" units="" offset="0" length="1">
+      <conversion g="1" h="0" />
+    </value>
+    
+    <value name="Byte 2" units="" offset="2" length="1">
+      <conversion g="1" h="0" />
+    </value>
+    
+    <value name="Byte 3" units="" offset="3" length="1">
+      <conversion g="1" h="0" />
+    </value>
+  </frame>
+</RealDashCAN>
