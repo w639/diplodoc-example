@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RealDashCAN version="2">
+  <frames>
+    <!-- Кнопка мультимедиа "звук громче" -->
+    <frame id="0x1CA" writeInterval="0">
+      <value name="Volume Up Button" units="" offset="1" length="1" startBit="0" endBit="7" signed="false">
+        <conversion g="1" h="0" />
+      </value>
+    </frame>
+  </frames>
+  
+  <!-- Определение кнопки для отправки CAN сообщения -->
+  <buttons>
+    <button name="Volume Up" 
+            canId="0x1CA" 
+            dlc="4" 
+            data="00,10,00,00" 
+            description="Кнопка увеличения громкости мультимедиа">
+      <position x="100" y="100" width="80" height="40" />
+      <text>VOL+</text>
+    </button>
+  </buttons>
+</RealDashCAN>
